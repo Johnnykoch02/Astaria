@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ThePressureIsOn.mp3-091b3bd37819efb705f2151fd01efbe3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music and Sounds/Music/ThePressureIsOn.mp3"
+dest_files=[ "res://.import/ThePressureIsOn.mp3-091b3bd37819efb705f2151fd01efbe3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

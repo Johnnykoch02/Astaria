@@ -1,0 +1,170 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/UI/ActionRPG-Menu-Screen.ogv" type="VideoStream" id=1]
+[ext_resource path="res://Assets/Fonts/yoster.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Managers/MenuFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Scenes/Menu.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Music and Sounds/Music/A World Called Home.wav" type="AudioStream" id=5]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -90.0
+margin_right = 160.0
+margin_bottom = 90.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.0
+margin_top = -93.0
+margin_right = 187.0
+margin_bottom = 94.0
+stream = ExtResource( 1 )
+autoplay = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenu" type="MarginContainer" parent="VideoPlayer"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -185.5
+margin_top = -187.0
+margin_right = 185.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="VideoPlayer/MainMenu"]
+margin_right = 371.0
+margin_bottom = 187.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VideoPlayer/MainMenu/CenterContainer"]
+margin_left = 117.0
+margin_top = 27.0
+margin_right = 254.0
+margin_bottom = 159.0
+
+[node name="CenterContainer" type="CenterContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer"]
+margin_right = 137.0
+margin_bottom = 69.0
+
+[node name="Label" type="Label" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer"]
+margin_right = 137.0
+margin_bottom = 69.0
+custom_fonts/font = ExtResource( 3 )
+text = "Astaria
+"
+
+[node name="CenterContainer2" type="CenterContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer"]
+margin_top = 73.0
+margin_right = 137.0
+margin_bottom = 132.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2"]
+margin_left = 13.0
+margin_right = 124.0
+margin_bottom = 59.0
+
+[node name="CenterContainer" type="CenterContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2"]
+margin_right = 111.0
+margin_bottom = 17.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer"]
+margin_left = 8.0
+margin_right = 103.0
+margin_bottom = 17.0
+
+[node name="1" type="Label" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer/HBoxContainer"]
+material = SubResource( 1 )
+margin_right = 11.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 2 )
+text = ">"
+
+[node name="Continue" type="Label" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer/HBoxContainer"]
+margin_left = 15.0
+margin_right = 95.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 3 )
+text = "Continue"
+
+[node name="CenterContainer2" type="CenterContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2"]
+margin_top = 21.0
+margin_right = 111.0
+margin_bottom = 38.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer2"]
+margin_left = 15.0
+margin_right = 95.0
+margin_bottom = 17.0
+
+[node name="2" type="Label" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer2/HBoxContainer"]
+visible = false
+margin_right = 11.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 4 )
+text = ">"
+
+[node name="NewGame" type="Label" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer2/HBoxContainer"]
+margin_right = 80.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 3 )
+text = "New Game"
+
+[node name="CenterContainer3" type="CenterContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2"]
+margin_top = 42.0
+margin_right = 111.0
+margin_bottom = 59.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer3"]
+margin_right = 111.0
+margin_bottom = 17.0
+
+[node name="3" type="Label" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer3/HBoxContainer"]
+visible = false
+margin_right = 11.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 4 )
+text = ">"
+
+[node name="Arcade" type="Label" parent="VideoPlayer/MainMenu/CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer2/CenterContainer3/HBoxContainer"]
+margin_right = 111.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 3 )
+text = "Arcade Mode"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[connection signal="finished" from="VideoPlayer" to="." method="_on_VideoPlayer_finished"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]

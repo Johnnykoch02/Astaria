@@ -1,0 +1,22 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://Items/Item.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Items/InventorySpriteSheet.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 32, 160, 32, 32 )
+
+[resource]
+script = ExtResource( 1 )
+name = "Pillager's Sword"
+stackable = false
+max_stack_size = 1
+damage = 24.0
+hitbox = "Sword"
+stat_level = 1
+status_target = ""
+status_modifier = 0
+type = 4
+worldTexture = SubResource( 1 )
+inventoryTexture = SubResource( 1 )

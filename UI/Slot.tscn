@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/Slot.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI/item_slot_default_background.png" type="Texture" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=112]
+
+[sub_resource type="StyleBoxTexture" id=113]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 18, 18 )
+
+[node name="Slot" type="Panel"]
+material = SubResource( 112 )
+margin_right = 22.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 22, 22 )
+custom_styles/panel = SubResource( 113 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

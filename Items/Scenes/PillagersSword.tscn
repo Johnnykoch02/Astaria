@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Items/InventorySpriteSheet.png" type="Texture" id=1]
+[ext_resource path="res://Items/WorldItem.gd" type="Script" id=2]
+[ext_resource path="res://Items/Data/PillagersSword.tres" type="Resource" id=3]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 32, 160, 32, 32 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 16.0
+
+[node name="Pillager\'sSword" type="Sprite"]
+scale = Vector2( 0.5, 0.5 )
+texture = SubResource( 1 )
+script = ExtResource( 2 )
+item_data = ExtResource( 3 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 2 )

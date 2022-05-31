@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/TheFightBegins.mp3-6ed44b8124b0aec5c66aafd8568d234e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music and Sounds/Music/TheFightBegins.mp3"
+dest_files=[ "res://.import/TheFightBegins.mp3-6ed44b8124b0aec5c66aafd8568d234e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

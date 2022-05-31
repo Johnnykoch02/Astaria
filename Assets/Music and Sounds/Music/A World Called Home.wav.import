@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/A World Called Home.wav-8b21b39cfaced69c2339bccb74e0db38.sample"
+
+[deps]
+
+source_file="res://Assets/Music and Sounds/Music/A World Called Home.wav"
+dest_files=[ "res://.import/A World Called Home.wav-8b21b39cfaced69c2339bccb74e0db38.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

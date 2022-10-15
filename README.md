@@ -3,6 +3,9 @@
 Personal Passion Project of mine, Meant to feel and look like Minecraft and Pokemon, but also feel authentic and enticing. Version: 0.0.1
 
 
+
+MUST WATCH WITH SOUND ON
+
 https://user-images.githubusercontent.com/77421428/196006566-5bdc1ff4-44ad-4d0a-8f2b-22ad21a95846.mp4
 
 

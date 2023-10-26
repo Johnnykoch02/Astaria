@@ -1,7 +1,7 @@
 extends Control
 
 var labels = []
-var current = 0
+var current = 0 
 var input_axis = 0
 onready var scenes = [null, null, GameManager.arcade_scene]
 
